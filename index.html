@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Battleship</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Battleship</h1>
+  <div class="row">
+    <div class="column">
+      <div class="form">
+        <p>Kapal</p>
+        <select class="shipType" name="shipType">
+          <option value="carrier">Carrier (5)</option>
+          <option value="battleship">Battleship (4)</option>
+          <option value="destroyer">Destroyer (3)</option>
+          <option value="submarine">Submarine (3)</option>
+          <option value="patrolboat">Patrol Boat (2)</option>
+        </select>
+        <p>Posisi Awal Kapal(baris,kolom)</p>
+        <input type="text" class="shipPosition">
+        <p>Ke kanan/ bawah</p>
+        <select class="shipOrientation" name="shipOrientation">
+          <option value="horizontal">Kanan</option>
+          <option value="vertical">Bawah</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Tambah" class="addBtn">
+      </div>
+      <br>
+      <button class="randomBtn">Random Kapal</button>
+      <button class="switchBtn">Ganti Player</button>
+      <button class="playBtn">Mulai Permainan</button>
+      <br><br>
+      <input type="text" class="shootPosition">
+      <button class="shootBtn">Tembak</button>
+      <button class="cheatShotBtn">Cheat Shot</button>
+      <p class="shootLogs">Status : </p>
+      <p class="cheatBoard"></p>
+    </div>
+    <div class="column">
+      <h3 class="nowPlay">Player 1</h3>
+      <p class="gameBoard"></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

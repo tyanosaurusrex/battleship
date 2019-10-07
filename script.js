@@ -103,8 +103,8 @@ function setShipsManual(){
   var orientation = shipOrientation.value;
   var player = (nowPlaying === 1) ? player1 : player2;
 
-  if(position === ''){
-    alert('Posisi kapal tidak boleh kosong');
+  if(position === '' || position.length > 2){
+    alert('Posisi kapal tidak boleh kosong dengan format e.g. A1');
   } else {
     var row = position.charCodeAt(0) - 64;
     var col = position.substring(1, position.length);
